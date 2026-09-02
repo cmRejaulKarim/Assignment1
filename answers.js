@@ -1,5 +1,6 @@
 // Question 1: Value Detective
 function describeValue(value) {
+
     if (!value) {
         return `${typeof (value)} | falsy`;
     } else {
@@ -9,7 +10,9 @@ function describeValue(value) {
 
 // Question 2: Bangladesh Weekend Machine
 function getDayType(day) {
+
     let lowercaseDay = day.toLowerCase();
+
     switch (lowercaseDay) {
         case 'friday':
         case 'saturday':
@@ -41,11 +44,11 @@ function validateUsername(username) {
     }
 
     return "Available";
-
 }
 
 // Question 4: Dhaka CNG Fare Meter
 function getCngFare(distance, isNight = false, waitingMinutes = 0) {
+
     let totalFare = 0;
     let minimumFare = 50;
     let extraDistance = distance - 2;
@@ -75,6 +78,7 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
 
 // Question 5: Run Chase Commentator
 const getChaseVerdict = (target, scored, ballsLeft) => {
+
     let runsNeeded = target - scored;
 
     if (runsNeeded <= 0) {
